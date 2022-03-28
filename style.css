@@ -1,0 +1,61 @@
+body {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 75px 75px 75px;
+  justify-content: center;
+}
+
+.box {
+  background-color: aquamarine;
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+  height: 75px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  width: 75px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Stylings */
+.button {
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.input {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.input:hover {
+  outline: none;
+}
+.wave {
+  border-radius: 40px 0 40px 0;
+  transition: 0.3s ease;
+}
+.waveC {
+  background-color: rgb(255, 254, 191);
+  color: rgb(197, 0, 197);
+  border: 2px solid rgb(230, 146, 255);
+  box-shadow: 2px 2px 2px 1px rgba(249, 73, 255, 0.4);
+}
+.waveC:hover {
+  border: 3px solid rgb(255, 251, 0);
+  box-shadow: 12px 12px 2px 1px rgba(249, 73, 255, 0.4);
+}

@@ -1,0 +1,66 @@
+body {
+  font-family: Gloria Hallelujah, cursive;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game-container {
+  grid-template-columns: 75px 75px 75px;
+  justify-content: center;
+  gap: 20px;
+  display: grid;
+}
+
+.box {
+  cursor: pointer;
+  height: 75px;
+  text-align: center;
+  width: 75px;
+  background-color: #7fffd4;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.button-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button {
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.input {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input:hover {
+  outline: none;
+}
+
+.wave {
+  border-radius: 40px 0;
+  transition: all .3s;
+}
+
+.waveC {
+  color: #c500c5;
+  background-color: #fffebf;
+  border: 2px solid #e692ff;
+  box-shadow: 2px 2px 2px 1px #f949ff66;
+}
+
+.waveC:hover {
+  border: 3px solid #fffb00;
+  box-shadow: 12px 12px 2px 1px #f949ff66;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
