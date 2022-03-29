@@ -13,8 +13,12 @@ h1 {
   justify-content: center;
 }
 
+.winner {
+  display: hidden;
+}
+
 .box {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   box-shadow: 5px 5px 5px black;
   cursor: pointer;
   height: 75px;
@@ -22,6 +26,53 @@ h1 {
   font-weight: bold;
   text-align: center;
   width: 75px;
+  animation: mymove 15s infinite alternate;
+}
+
+.x {
+  background-color: magenta;
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+  height: 75px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  width: 75px;
+}
+
+.o {
+  background-color: yellow;
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+  height: 75px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  width: 75px;
+}
+
+@keyframes mymove {
+  0% {
+    background-color: red;
+  }
+  14% {
+    background-color: orange;
+  }
+  28% {
+    background-color: yellow;
+  }
+  42% {
+    background-color: green;
+  }
+  66% {
+    background-color: rgb(0, 0, 162);
+  }
+  82% {
+    background-color: indigo;
+  }
+  100% {
+    background-color: violet;
+  }
 }
 
 .button-container {

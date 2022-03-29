@@ -13,15 +13,71 @@ h1 {
   display: grid;
 }
 
+.winner {
+  display: hidden;
+}
+
 .box {
   cursor: pointer;
   height: 75px;
   text-align: center;
   width: 75px;
-  background-color: #7fffd4;
+  font-size: 40px;
+  font-weight: bold;
+  animation: mymove 15s infinite alternate;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.x {
+  cursor: pointer;
+  height: 75px;
+  text-align: center;
+  width: 75px;
+  background-color: #f0f;
   font-size: 40px;
   font-weight: bold;
   box-shadow: 5px 5px 5px #000;
+}
+
+.o {
+  cursor: pointer;
+  height: 75px;
+  text-align: center;
+  width: 75px;
+  background-color: #ff0;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px #000;
+}
+
+@keyframes mymove {
+  0% {
+    background-color: red;
+  }
+
+  14% {
+    background-color: orange;
+  }
+
+  28% {
+    background-color: #ff0;
+  }
+
+  42% {
+    background-color: green;
+  }
+
+  66% {
+    background-color: #0000a2;
+  }
+
+  82% {
+    background-color: indigo;
+  }
+
+  100% {
+    background-color: violet;
+  }
 }
 
 .button-container {
